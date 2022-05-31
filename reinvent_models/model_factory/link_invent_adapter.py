@@ -6,8 +6,8 @@ from reinvent_models.link_invent.dataset.paired_dataset import PairedDataset
 from reinvent_models.link_invent.dto.linkinvent_batch_dto import LinkInventBatchDTO
 from reinvent_models.link_invent.link_invent_model import LinkInventModel
 from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_models.patformer.dto import BatchLikelihoodDTO
-from reinvent_models.patformer.dto.sampled_sequence_dto import SampledSequencesDTO
+from reinvent_models.link_invent.dto import BatchLikelihoodDTO
+from reinvent_models.link_invent.dto.sampled_sequence_dto import SampledSequencesDTO
 
 
 class LinkInventAdapter(GenerativeModelBase):

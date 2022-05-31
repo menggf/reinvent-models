@@ -7,4 +7,3 @@ class ModelTypeEnum:
     REINVENT_CORE = "reinvent_core"
     LIB_INVENT = "lib_invent"
     LINK_INVENT = "link_invent"
-    PATFORMER = "patformer"

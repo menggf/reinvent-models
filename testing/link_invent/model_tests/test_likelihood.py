@@ -2,7 +2,7 @@ import unittest
 
 from reinvent_models.model_factory.enums.model_mode_enum import ModelModeEnum
 from reinvent_models.model_factory.link_invent_adapter import LinkInventAdapter
-from reinvent_models.patformer.dto.sampled_sequence_dto import SampledSequencesDTO
+from reinvent_models.link_invent.dto.sampled_sequence_dto import SampledSequencesDTO
 from testing.fixtures.paths import LINK_INVENT_PRIOR_PATH
 from testing.fixtures.test_data import ETHANE, HEXANE, PROPANE, BUTANE
 

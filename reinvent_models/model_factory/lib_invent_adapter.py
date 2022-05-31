@@ -6,8 +6,8 @@ from reinvent_models.lib_invent.models.dataset import DecoratorDataset
 from reinvent_models.lib_invent.models.model import DecoratorModel
 from reinvent_models.link_invent.dto.linkinvent_batch_dto import LinkInventBatchDTO
 from reinvent_models.model_factory.generative_model_base import GenerativeModelBase
-from reinvent_models.patformer.dto import BatchLikelihoodDTO
-from reinvent_models.patformer.dto.sampled_sequence_dto import SampledSequencesDTO
+from reinvent_models.link_invent.dto import BatchLikelihoodDTO
+from reinvent_models.link_invent.dto.sampled_sequence_dto import SampledSequencesDTO
 
 
 class LibInventAdapter(GenerativeModelBase):

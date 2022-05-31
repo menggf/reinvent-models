@@ -4,7 +4,6 @@ from reinvent_models.model_factory.generative_model_base import GenerativeModelB
 from reinvent_models.model_factory.lib_invent_adapter import LibInventAdapter
 from reinvent_models.model_factory.link_invent_adapter import LinkInventAdapter
 from reinvent_models.model_factory.reinvent_core_adapter import ReinventCoreAdapter
-from reinvent_models.model_factory.patformer_adapter import PatformerAdapter
 
 class GenerativeModel:
     def __new__(cls, configuration: ModelConfiguration) -> GenerativeModelBase:
@@ -17,8 +16,6 @@ class GenerativeModel:
             model = LibInventAdapter(cls._configuration.model_file_path, mode=cls._configuration.model_mode)
         elif cls._configuration.model_type == model_type_enum.LINK_INVENT:
             model = LinkInventAdapter(cls._configuration.model_file_path, mode=cls._configuration.model_mode)
-        elif cls._configuration.model_type == model_type_enum.PATFORMER:
-            model = PatformerAdapter(cls._configuration.model_file_path, mode=cls._configuration.model_mode)
         else:
             raise ValueError(f"Invalid model_type provided: '{cls._configuration.model_type}")
         return model
